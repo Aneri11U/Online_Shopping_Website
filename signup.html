@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_file.css">
+</head>
+<body class="log">
+    <div class="login">
+        <label><a href="Register.html" style=" color: aqua">Click here</a> If you don't have an account</label>
+
+        <form method="post" action="shop.html" enctype = "multipart/form-data">
+            <br>
+            <label for="username"><b><span style="color:red">* </span></b>Username : </label>
+            <input type="text" name="username" id="username" placeholder="Username" onchange="check_user()"><br>
+            <br>
+            <label for="email"><b><span style="color:red">* </span></b>Email&nbsp; &nbsp; &nbsp; &nbsp; : </label>
+            <input type="email" name="emial" id="'email" placeholder="Email-ID" onchange="check_mail()"><br>
+            <br>
+            <label for="password"><b><span style="color:red">* </span></b>Password : </label>
+            <input type="password" name="password" id="password" placeholder="Password" onchange="check_pass()"><br>
+            <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button type="submit" onclick="return check()">Submit</button>
+
+        </form>
+        
+    </div>
+	<script src="js_file.js"></script>
+
+</body>
+</html>

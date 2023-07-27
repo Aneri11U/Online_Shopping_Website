@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+    <link rel="stylesheet" href="css_file.css">
+</head>
+
+<body>
+    <section id="navigation_bar">
+		<a href="#" ><img src="logo.png" class="logo"></a>
+		<div>
+			<ul id="nev">
+				<li><a href="prac9.html">Home</a></li>
+				<li><a href="Register.html" class="now">Register</a></li>
+				<li><a href="signup.html">Log in</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<!-- <li><a href="About.html">About</a></li> -->
+				<!-- <li><a href="Cart.html"><i class="fa fa-shopping-cart"></i></a></li>  -->
+				<!-- <li><a href="Cart.html">Cart</a></li>  -->
+				<li><a href="Cart.html"><img src="cart icon.jpeg" height="10%" width="15%"></a></li>
+			</ul>
+		</div>
+	</section>
+    <section id="reg">
+	<h2>Create an Account</h2>
+    <marquee behavior="alternate" speed="slow"><h5 style="color:#fffcfc"><i><b>All the asterisk (<b style="color:red">*</b>) marked fields are to be filled compulsarily!</b></i></h5></marquee><hr>
+	<lable class="abc"><a href="signup.html">Click here</a> to log in if you already have an account</lable>
+	<form name = "f" method = "post" action="prac9.html" enctype = "multipart/form-data" class="c">
+
+	<!-- <fieldset>  -->
+	<!-- <legend style = "color :red;"><h3>Personal infromation</h3></legend>  -->
+
+	<label><b><span style="color:red">* </span></b>Enter full name: </label> 
+	<input type = "text" name ="uname" placeholder="Enter name" onkeydown="alphapress()" onchange="checkname()"> <span id="ename"></span><br>
+    <br>
+	<label> <b><span style="color:red">* </span></b>Email: </label>  
+	<input type = "email" name="email" placeholder="Enter email" onchange="checkemail()"> <span id="e"></span><br>
+	<br>
+	<label> <b><span style="color:red">* </span></b>Phone number: </label> 
+	<input type = "phonenumber" name="number" placeholder="Enter phone number" onchange="check_number()"><span id="p"></span><br>
+    <br>
+	<label> Gender: </label><input type = "radio" name = "g" value = "m "> Male <input type = "radio" name = "g" value = "f"> Female <input type = "radio" name = "g" value = "o"> Other<br>
+    <br>
+	<label> Age : </label> <input type = "range" min=15 max=100 onchange = "o.value = this.value" name = "age"> <output id = "o"> </output> <br>
+    <br>
+	<!-- <label> Father's name: </label> <input type = "text" name ="ufname"> -->
+	<!-- <label> Mother's name: </label> <input type = "text" name ="umname"> -->
+	<!-- <label> Nationality: </label> <input type = "text" name ="unationality"> -->
+	<label>Address: </label> 
+	<textarea rows="4" cols="30" placeholder="Enter your address here..."></textarea><br>
+    <br>
+	<label><b><span style="color:red">* </span></b> User ID: </label> <input type = "text" name ="uid" id="username" onchange="checkuid()" placeholder="user-ID"> <span id="user"></span><br>
+    <br>
+    <label><b><span style="color:red">* </span></b> Password: </label> <input type = "password" name ="upassword" id="password" placeholder="Enter password" onchange="checkpassword2()"  > 
+	<span id = "pass1"></span>
+    <br>
+    <br>
+    <label><b><span style="color:red">* </span></b> Resubmit Password: </label> <input type = "password" name ="urepassword" onchange="checkpassword()" placeholder="Renter password">
+	<span id = "pass2"></span><br>
+    <br>
+
+	<input type ="submit" value="Sign Up" onclick="return Say()"> </input>
+	</form>
+
+	<script src="js_file.js"></script>
+</section>
+</body>
+
+</html>
