@@ -12,7 +12,6 @@ This is the homepage of the website:
 From this page, one can go to register page and register, the data of user will be stored in the local storage.
 
 <img width="960" alt="image" src="https://github.com/Aneri11U/Online_Shopping_Website/assets/121008198/c4112587-6276-405d-b110-8c733c02aff6">
-
 <img width="960" alt="image" src="https://github.com/Aneri11U/Online_Shopping_Website/assets/121008198/a2ccad56-52ba-4786-8b84-65c6238ed688">
 
 Now user can log in through this page:
